@@ -337,10 +337,10 @@ function getHTML(array) {
     console.log(
       `<div id="artist">
         <div class="image">
-        <img src=""/>
+          <img src="assets/${array[i].name.replace(" ", "-")}.jpg"/>
         </div>
-        <div class = "">
-        <a href="${array[i].wikipedia}">${array[1].name}</a>
+        <div class = "name">
+          <a href="${array[i].wikipedia}">${array[1].name}</a>
         </div>
         <div class = "bio">${array[i].bio}</div>
         </div>`)
@@ -348,7 +348,7 @@ function getHTML(array) {
   }
 }
 
-//getHTML(artists)
+getHTML(artists)
 
 
 
