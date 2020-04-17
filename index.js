@@ -294,10 +294,7 @@ function addArtist(id, name, years, genre, nationality, bio) {
 
 addArtist('20', 'Matthew', '1984 - 2020', 'Current Day', 'Norwegian/Russian', 'more to be added later')
 
-//for (let i = 0; i < artists.length; i++) {
-//console.log(artists)
-//}
-console.log(artists[20])
+//console.log(artists[20])
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
@@ -335,20 +332,40 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */) {
+function getHTML(array) {
+  for (i = 0; 0 < array.length; i++) {
+    console.log(
+      `<div id="artist">
+        <div class="image">
+        <img src=""/>
+        </div>
+        <div class = "">
+        <a href="${array[i].wikipedia}">${array[1].name}</a>
+        </div>
+        <div class = "bio">${array[i].bio}</div>
+        </div>`)
 
-  /* Code here */
-
+  }
 }
+
+//getHTML(artists)
+
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */) {
-
-  /* Code here */
-
+function randomize(array) {
+  for (i = array.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * i)
+    k = array[i]
+    array[i] = array[j]
+    array[j] = k
+  }
+  return array
 }
 
+randomize(artists)
+
+//console.log(artists[0])
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
