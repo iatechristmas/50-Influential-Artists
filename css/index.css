@@ -1,4 +1,255 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-container {
+  width: 800px;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .homenav {
+  font-weight: bold;
+}
+nav a {
+  display: inline;
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+nav {
+  padding: 2rem;
+}
+/* Centered text */
+body {
+  width: ;
+  display: flex;
+  justify-content: ;
+  flex-direction: column;
+  align-items: center;
+}
+.insideimage {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border-bottom: 2px solid lightgrey;
+}
+.centered {
+  display: flex;
+  flex-direction: ;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .centered {
+    font-size: 2rem;
+    top: 20%;
+  }
+}
+.centered1 {
+  background-color: white;
+  width: 150px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  box-shadow: 2px 2px;
+}
+@media (max-width: 500px) {
+  .centered1 {
+    top: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .title-container {
+    width: 400px;
+  }
+}
+.title-container img {
+  width: 800px;
+}
+@media (max-width: 500px) {
+  .title-container img {
+    width: 400px;
+  }
+}
+.title-container img:hover {
+  opacity: 0.5;
+}
+.artists-container {
+  display: flex;
+  width: 800px;
+  padding-top: 2rem;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+}
+.artists-container .artist1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.artists-container .artist1 a {
+  text-decoration: none;
+  color: black;
+  padding: 3%;
+  font-size: 1.5rem;
+}
+.artists-container .artist1 img {
+  width: 300px;
+  height: 230px;
+  border-radius: 0.5rem;
+}
+.artists-container .artist1 img:hover {
+  opacity: 0.5;
+}
+.artists-container .artist2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: soace-evenly;
+  align-items: center;
+}
+.artists-container .artist2 a {
+  text-decoration: none;
+  color: black;
+  padding: 3%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .artists-container .artist2 a {
+    text-align: center;
+  }
+}
+.artists-container .artist2 img {
+  width: 300px;
+  height: 230px;
+  border-radius: 0.5rem;
+}
+.artists-container .artist2 img:hover {
+  opacity: 0.5;
+}
+.bio {
+  padding: 5%;
+  text-align: center;
+  font-weight: bold;
+}
